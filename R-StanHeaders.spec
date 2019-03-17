@@ -4,13 +4,12 @@
 #
 Name     : R-StanHeaders
 Version  : 2.18.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/StanHeaders_2.18.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/StanHeaders_2.18.1.tar.gz
 Summary  : C++ Header Files for Stan
 Group    : Development/Tools
 License  : BSD-3-Clause
-Requires: R-Rcpp
 BuildRequires : R-Rcpp
 BuildRequires : buildreq-R
 BuildRequires : buildreq-cmake
@@ -32,10 +31,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548731635
+export SOURCE_DATE_EPOCH=1552799206
 
 %install
-export SOURCE_DATE_EPOCH=1548731635
+export SOURCE_DATE_EPOCH=1552799206
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -71,8 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library StanHeaders|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  StanHeaders || :
 
 
 %files
@@ -1912,4 +1910,3 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/StanHeaders/include/sunmatrix/sunmatrix_dense.h
 /usr/lib64/R/library/StanHeaders/include/sunmatrix/sunmatrix_sparse.h
 /usr/lib64/R/library/StanHeaders/lib/libStanHeaders.a
-/usr/lib64/R/library/StanHeaders/lib/symbols.rds
