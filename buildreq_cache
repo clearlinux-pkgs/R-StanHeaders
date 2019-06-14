@@ -1,2 +1,9 @@
-2.18.1
+2.18.1.10
 R-Rcpp
+R-ggplot2
+R-gridExtra
+R-inline
+R-loo
+R-matrixStats
+R-pkgbuild
+R-rstan
