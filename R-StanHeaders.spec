@@ -4,7 +4,7 @@
 #
 Name     : R-StanHeaders
 Version  : 2.21.0.7
-Release  : 38
+Release  : 39
 URL      : https://cran.r-project.org/src/contrib/StanHeaders_2.21.0-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/StanHeaders_2.21.0-7.tar.gz
 Summary  : C++ Header Files for Stan
