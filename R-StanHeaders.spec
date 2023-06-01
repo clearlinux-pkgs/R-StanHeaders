@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-StanHeaders
-Version  : 2.26.25
-Release  : 58
-URL      : https://cran.r-project.org/src/contrib/StanHeaders_2.26.25.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/StanHeaders_2.26.25.tar.gz
+Version  : 2.26.26
+Release  : 59
+URL      : https://cran.r-project.org/src/contrib/StanHeaders_2.26.26.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/StanHeaders_2.26.26.tar.gz
 Summary  : C++ Header Files for Stan
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -46,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684343651
+export SOURCE_DATE_EPOCH=1685647909
 
 %install
-export SOURCE_DATE_EPOCH=1684343651
+export SOURCE_DATE_EPOCH=1685647909
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-StanHeaders
 cp %{_builddir}/StanHeaders/src/cvodes/LICENSE %{buildroot}/usr/share/package-licenses/R-StanHeaders/11f3313e50d12fd8c836faad0c5786d00db91a96 || :
