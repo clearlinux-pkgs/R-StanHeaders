@@ -7,7 +7,7 @@
 #
 Name     : R-StanHeaders
 Version  : 2.32.10
-Release  : 70
+Release  : 71
 URL      : https://cran.r-project.org/src/contrib/StanHeaders_2.32.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/StanHeaders_2.32.10.tar.gz
 Summary  : C++ Header Files for Stan
